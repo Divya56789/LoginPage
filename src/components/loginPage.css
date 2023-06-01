@@ -1,0 +1,143 @@
+.loginPage__container{
+    width: min(100% - 6rem);
+    margin-inline: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    height: calc(100vh - 6rem);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.loginPage__container__leftpart{
+    background: url(../assets/black_background.jpg);
+    flex:45%;
+    border-radius: 1rem;
+    padding:0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.loginPage__container__leftpart__left-logo{
+    display: flex;
+    align-items: center;
+}
+.loginPage__container__leftpart__text h1{
+    font-size: 45px;
+    color:white;
+}
+.loginPage__container__leftpart__text p{
+    color:gainsboro;
+    font-size: 30px;
+    font-weight: 500;
+}
+.loginPage__container__leftpart__footer__email{
+    display: flex;
+    align-items: center;
+}
+.loginPage__container__leftpart__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.loginPage__container__leftpart__footer__email p{
+    color:gainsboro
+}
+.loginPage__container__rightpart{
+    display: flex;
+    flex-direction: column;
+    flex:45%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap:1rem;
+
+}
+.loginPage__container__rightpart__logo-text img{
+    width: 40px;
+    height: 40px;
+}
+.loginPage__container__rightpart__logo-text P{
+    color: gray;
+}
+.loginPage__container__rightpart__logo-text span{
+    color:teal;
+}
+
+.loginPage__container__rightpart__form  form input{
+    width: 100%;
+    padding:0.7rem 0.5rem;
+    border:2px solid gainsboro;
+    border-radius: 0.5rem;
+    margin:0.5rem 0;
+    box-sizing: border-box;
+}
+::placeholder{
+    color:gainsboro;
+    font-size: 16px;
+    font-weight: 500;
+}
+.loginPage__container__rightpart__form form small{
+    display: flex;
+    color:gainsboro;
+    font-weight: 500;
+    font-size: medium;
+    justify-content:flex-end;
+    cursor: pointer;
+}
+.loginPage__container__rightpart__form form small:hover{
+    color:black
+}
+.loginPage__container__rightpart__form form button{
+    width: 100%;
+    padding:0.7rem 0.5rem;
+    color:white;
+    background-color: black;
+    border:none;
+    border-radius: 0.5rem;
+    font-size: large;
+    box-shadow: 16px 16px 15px #dcdcdc;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+.loginPage__container__rightpart__form form button:hover{
+    opacity: 0.8;
+}
+.loginPage__container__rightpart__signUp p{
+    color:rgb(204, 202, 202)
+}
+.loginPage__container__rightpart__signUp span{
+    color:teal;
+    cursor: pointer;
+}
+.loginPage__container__rightpart__signUp span:hover{
+    color:rgb(2, 82, 82);
+    font-weight: 600;
+}
+
+/* responsive for tablet */
+@media screen and (max-width: 870px){
+    .loginPage__container{
+        width: 100%;
+        height: 100vh;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .loginPage__container__leftpart, .loginPage__container__rightpart{
+        flex: 100%;
+        height: 70%;
+    }
+    .loginPage__container__leftpart{
+        border-radius: 0;
+    }
+    
+}
+/* responsive for mobile */
+@media screen and (max-width:400px){
+    .loginPage__container__rightpart__form form{
+        width: 85%;
+        margin: auto;
+    }
+    
+    
+}
